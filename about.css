@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+.fejlec {
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+    text-align: center;
+}
+
+.lablec{ 
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+    text-align: center;
+}
+
+.doboz {
+    display: inline-block;
+    background-color: beige;
+    height: 75%;
+    margin-top: 10%;
+}
+
+#jobb {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 30%;
+    text-align: center;
+}
+
+#bal {
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 30%;
+    text-align: center;
+}   
