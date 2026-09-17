@@ -1,0 +1,90 @@
+/* VILÁGOS MÓD */
+
+/* SÖTÉT MÓD */
+
+
+body{
+    background-color:;
+}
+
+/* LOGÓ */
+.logo{
+    text-align: center;
+    
+}
+
+/* LÁBLÉC */
+.lablec{
+    background-color: ;
+    text-align: center;
+    bottom: 0px;
+}
+
+
+.typing-container {
+  display: inline-block;
+}
+
+.typing-text {
+  font-family: 'Times New Roman', Times, serif; /* Fontos a fix szélességű betűtípus */
+  overflow: hidden; /* Elrejti a még ki nem írt betűket */
+  border-right: 2px solid black; /* Ez a villogó kurzor */
+  white-space: nowrap; /* Nem engedi a soron belüli törést */
+  letter-spacing: 2px;
+  
+  /* Animációk: gépelés + kurzor villogás */
+  animation: 
+    typing 4s steps(35, end) 1,
+    blink-caret 0.75s step-end 1;
+}
+
+/* Szöveg kinyitása balról jobbra */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Kurzor villogása */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+/* A weboldal alapértelmezett háttérszíne */
+:root {
+  --bg-color: #ced83c; 
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.logo-container {
+  position: relative;
+  display: inline-block; /* A konténer felveszi a kép méretét */
+}
+
+.logo-img {
+  display: block;
+  max-width: 300px;
+}
+
+/* Rátett színátmenet réteg (overlay) */
+.logo-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Körkörös átmenet: a közepe átlátszó (látszik a logó), 
+     a szélei pedig felveszik a weboldal háttérszínét */
+  background: radial-gradient(
+    circle, 
+    transparent 30%, 
+    var(--bg-color) 100%
+  );
+  
+  pointer-events: none; /* Átengedi a kattintásokat a képre */
+}
