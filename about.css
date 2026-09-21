@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    margin: 0%;
 }
 
 .fejlec {
@@ -8,12 +9,12 @@ body {
     background-color: black;
     text-align: center;
     border-bottom: 2px solid yellow;
-    border-radius: 10%;
+    border-radius: 0% 0% 10% 10%;
     padding: auto;
     color: yellow;
 }
 
-.fejlec img{
+#logo{
     width: 100px;
     height: 100px    ;
 }
@@ -24,7 +25,10 @@ body {
     background-color: black;
     text-align: center;
     border-top: 2px solid yellow;
-    border-radius: 10%;
+    border-radius: 10% 10% 0% 0%;
+    background-image: url("kepek/moon.png");
+    background-repeat: no-repeat;
+    color: yellow;
 }
 
 #lent {
@@ -38,9 +42,15 @@ body {
     border-radius: 20px;
     background-color: black;
     color: yellow;
-    border: 1px solid yellow;
+    border: 2px solid yellow;
     margin-bottom: 5%;
     text-decoration: none;
+    background-image: url("kepek/moon.png");
+    background-repeat: no-repeat;   
+}
+
+#lent a {
+    color: yellow;
 }
 
 #fent {
@@ -58,6 +68,8 @@ body {
     color: yellow;
     margin-top: 5%;
     margin-bottom: 5%;
+    background-image: url("kepek/moon.png");
+    background-repeat: no-repeat;
 }   
 
 #bal b {
@@ -80,9 +92,15 @@ lent:hover {
     text-decoration: none;
 }
 
+.menu a {
+    color: yellow;
+    text-decoration: none;
+}
+
 .manu a {
     color: yellow;
     text-decoration: none;
+    margin: 5px;
 }
 
 .lablec a{
