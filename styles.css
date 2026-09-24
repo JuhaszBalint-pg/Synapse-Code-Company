@@ -3,24 +3,17 @@
 /* SÖTÉT MÓD */
 
 
+.background{
+background-image: url(background.png);
+width: 100% ;
+height: 100%;
+}
+
 body{
-    background-color:;
+
 }
 
 /* LOGÓ */
-.logo{
-    text-align: center;
-    
-}
-
-/* LÁBLÉC */
-.lablec{
-    background-color: ;
-    text-align: center;
-    bottom: 0px;
-}
-
-
 .typing-container {
   display: inline-block;
 }
@@ -34,8 +27,8 @@ body{
   
   /* Animációk: gépelés + kurzor villogás */
   animation: 
-    typing 4s steps(35, end) 1,
-    blink-caret 0.75s step-end 1;
+  typing 4s steps(35, end) 1,
+  blink-caret 0.75s step-end 1;
 }
 
 /* Szöveg kinyitása balról jobbra */
@@ -50,41 +43,21 @@ body{
   50% { border-color: black; }
 }
 
-/* A weboldal alapértelmezett háttérszíne */
-:root {
-  --bg-color: #ced83c; 
-}
-
-body {
-  background-color: var(--bg-color);
-}
-
 .logo-container {
-  position: relative;
-  display: inline-block; /* A konténer felveszi a kép méretét */
+  position:absolute;
+  display: inline-block;
+  align-items: center;
 }
 
 .logo-img {
   display: block;
   max-width: 300px;
 }
-
-/* Rátett színátmenet réteg (overlay) */
-.logo-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-  /* Körkörös átmenet: a közepe átlátszó (látszik a logó), 
-     a szélei pedig felveszik a weboldal háttérszínét */
-  background: radial-gradient(
-    circle, 
-    transparent 30%, 
-    var(--bg-color) 100%
-  );
-  
-  pointer-events: none; /* Átengedi a kattintásokat a képre */
+/* LÁBLÉC */
+.lablec{
+    background-color: black ;
+    color: white;
+    text-align: center;
+    bottom: 0px;
+    padding: 5px;;
 }
