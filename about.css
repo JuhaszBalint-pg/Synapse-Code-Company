@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+    margin: 0%;
+}
+
+.fejlec {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    border-radius: 0% 0% 10% 10%;
+    padding: auto;
+    padding-top: 75px;
+    color: yellow;
+}
+
+#logo{
+    width: 200px;
+    height: 200px    ;
+}
+
+.lablec{ 
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+    border-top: 2px solid yellow;
+    border-radius: 10% 10% 0% 0%;
+    background-image: url("kepek/moon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: yellow;
+}
+
+#lent {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    margin-bottom: 5%;
+    text-decoration: none;
+    background-image: url("kepek/moon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;   
+}
+
+#lent a {
+    color: yellow;
+}
+
+#fent {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin-left: 9%;
+    margin-right: 9%;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid yellow;
+    color: yellow;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-image: url("kepek/moon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}   
+
+#bal b {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+fent:hover {
+    size: 100%;
+}
+
+lent:hover {
+    size: 100%;
+}
+
+.menu {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    text-decoration: none;
+}
+
+.menu a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.manu a {
+    color: yellow;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.lablec a{
+    color: yellow;
+    text-decoration: none;
+}
+
+table {
+    border: 2px solid yellow;
+    border-radius: 20px;
+    border-spacing: 0;
+    width: 80%;
+    margin-left: 9%;
+    margin-right: 9%;
+    color: yellow;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 6px 10px;
+    background-image: url("kepek/moon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+td{
+    border-top: 1px solid yellow;
+    width: 49%;
+    height: 50px;
+}
+
+#githublogo {
+    height: 100px;
+    width: 150px;
+}
