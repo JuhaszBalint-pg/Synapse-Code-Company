@@ -11,13 +11,13 @@ body {
     border-bottom: 2px solid yellow;
     border-radius: 0% 0% 10% 10%;
     padding: auto;
-    padding-top: 75px;
+    padding-top: 25px;
     color: yellow;
 }
 
 #logo{
     width: 200px;
-    height: 200px    ;
+    height: 200px;
 }
 
 .lablec{ 
@@ -31,6 +31,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     color: yellow;
+    padding-bottom: 25px;
 }
 
 #lent {
@@ -138,4 +139,13 @@ td{
 #githublogo {
     height: 100px;
     width: 150px;
+}
+
+#Terkep {
+    width: 75%;
+    height: 500px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
 }
