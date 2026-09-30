@@ -9,92 +9,131 @@
 </head>
 
 <body>
-
     <!-- FEJLÉC -->
     <div class="fejlec">
         <div class="navbar">
-            <a href="#" onclick="showPage('fooldal')">Főoldal</a>
-            <a href="about.html">Rólunk</a>
-            <a href="#" onclick="showPage('sikereink')">Sikereink</a>
-            <a href="#" onclick="showPage('celjaink')">Céljaink</a>
-            <a href="#">Nézet</a>
+            <a href="#" onclick="showPage('fooldal')">
+                Főoldal
+            </a>
+            <a href="about.html">
+                Rólunk
+            </a>
+            <a href="#" onclick="showPage('sikereink')">
+                Sikereink
+            </a>
+            <a href="#" onclick="showPage('celjaink')">
+                Céljaink
+            </a>
+            <a href="#" onclick="toggleMode(); return false;">
+                Nézet
+            </a>
         </div>
     </div>
 
-
     <!-- FŐOLDAL -->
     <section id="fooldal" class="page active">
-
         <div class="typing-container_p">
             <p class="typing-text">
                 Üdvözlünk a Synaps Code weboldalán!
             </p>
         </div>
-
         <div class="logo-container">
-            <img src="kepek/company_logo_removed_bg_black.png"
-                 alt="Synaps Code logó"
-                 class="logo-img">
+            <img id="logo" src="kepek/company_logo_removed_bg_black.png" alt="Synaps Code logó" class="logo-img">
         </div>
-
     </section>
-
 
     <!-- SIKEREINK -->
     <section id="sikereink" class="page">
-
         <h2>Sikereink</h2>
-
-        <ul class="lista">
-            <li>
+        <ul class="typing-container_p">
+            <li id="siker1">
                 <strong>Facebook</strong> – A leghíresebb social media platform,
                 első nagyobb sikerünk
             </li>
-
-            <li>
+            <li id="siker2">
                 <strong>Spotify</strong> – Saját vágyainknak is eleget tudtunk tenni,
                 de másoknak is átadtuk
             </li>
         </ul>
-
     </section>
-
 
     <!-- CÉLJAINK -->
     <section id="celjaink" class="page">
-
         <h2>Céljaink</h2>
-
         <ul>
             <li>
                 <strong>Egy saját AI fejlesztése</strong> –
                 Szeretnénk, ha testreszabott segédünk lenne
                 a fejlesztéseinkben
             </li>
-
             <li>
                 <strong>További fejlesztések</strong> –
                 Folyamatosan szeretnénk új dolgokat létrehozni.
             </li>
         </ul>
-
     </section>
-
-
     <script>
-        function showPage(pageId) {
 
+        // =========================
+        // OLDALVÁLTÁS                           AI CSINÁLTA
+        // =========================
+
+        function showPage(pageId) {
             // Minden oldal eltüntetése
             const pages = document.querySelectorAll(".page");
-
             pages.forEach(page => {
                 page.classList.remove("active");
             });
-
-            // A kiválasztott oldal megjelenítése
+            // Kiválasztott oldal megjelenítése
             document.getElementById(pageId).classList.add("active");
+            // Ha a Sikereink oldalra lépünk,
+            // elindítjuk a két szöveg gépelését
+            if (pageId === "sikereink") {
+                startTyping();
+            }
+        }
+
+        // =========================
+        // SIKEREINK GÉPELÉSE                          AI CSINÁLTA
+        // =========================
+
+        function startTyping() {
+            const siker1 = document.getElementById("siker1");
+            const siker2 = document.getElementById("siker2");
+            // Először mindkét szöveget elrejtjük
+            siker1.style.display = "none";
+            siker2.style.display = "none";
+            // Első sor megjelenítése
+            setTimeout(function () {
+                siker1.style.display = "inline-block";
+                siker1.classList.add("typing");
+            }, 100);
+            // Második sor megjelenítése 4 másodperc után
+            setTimeout(function () {
+                siker2.style.display = "inline-block";
+                siker2.classList.add("typing");
+            }, 4100);
+        }
+
+        // =========================
+        // DARK / LIGHT MODE                          AI CSINÁLTA
+        // =========================
+
+        function toggleMode() {
+            // Light mode ki/be kapcsolása
+            document.body.classList.toggle("light-mode");
+            // Logó megkeresése
+            const logo = document.getElementById("logo");
+            // Ha Light Mode van
+            if (document.body.classList.contains("light-mode")) {
+                logo.src = "kepek/company_logo_removed_bg_white.png";
+            }
+            // Ha Dark Mode van
+            else {
+                logo.src = "kepek/company_logo_removed_bg_black.png";
+            }
         }
     </script>
-
 </body>
+
 </html>

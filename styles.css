@@ -11,6 +11,7 @@ body {
     background-color: white;
     color: black;
     font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 
@@ -24,6 +25,7 @@ body {
     height: 50px;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s;
 }
 
 .navbar {
@@ -40,7 +42,7 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar a:hover {
@@ -93,21 +95,43 @@ body {
 .typing-text {
     display: inline-block;
     overflow: hidden;
-
     border-right: 2px solid black;
-
     white-space: nowrap;
     letter-spacing: 2px;
-
     animation:
         typing 4s steps(35, end),
         blink-caret 0.75s step-end infinite;
 }
 
 
-/* Gépelés */
+/* =========================
+   SIKEREINK GÉPELÉS
+   ========================= */
+
+#siker1,
+#siker2 {
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    border-right: 2px solid white;
+}
+
+
+/* A gépelés animációja */
+
+.typing {
+    animation:
+        typing 4s steps(35, end),
+        blink-caret 0.75s step-end infinite;
+}
+
+
+/* =========================
+   GÉPELÉS
+   ========================= */
 
 @keyframes typing {
+
     from {
         width: 0;
     }
@@ -115,10 +139,13 @@ body {
     to {
         width: 100%;
     }
+
 }
 
 
-/* Kurzor */
+/* =========================
+   KURZOR
+   ========================= */
 
 @keyframes blink-caret {
 
@@ -128,8 +155,9 @@ body {
     }
 
     50% {
-        border-color: black;
+        border-color: white;
     }
+
 }
 
 
@@ -156,7 +184,7 @@ body {
 
 #sikereink,
 #celjaink {
-    max-width: 900px;
+    color: white;
     margin: 0 auto;
 }
 
@@ -172,4 +200,83 @@ body {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.6;
+}
+
+
+/* =========================
+   LIGHT MODE
+   ========================= */
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+
+/* Fejléc */
+
+body.light-mode .fejlec {
+    background-color: lightgrey;
+}
+
+
+/* Menü */
+
+body.light-mode .navbar a {
+    color: black;
+}
+
+body.light-mode .navbar a:hover {
+    background-color: lightgrey;
+}
+
+
+/* Oldalak */
+
+body.light-mode .page.active {
+    background-color: white;
+    color: black;
+}
+
+
+/* Szövegek */
+
+body.light-mode .typing-container_p {
+    color: black;
+}
+
+body.light-mode #sikereink,
+body.light-mode #celjaink {
+    color: black;
+}
+
+
+/* Gépelés kurzora */
+
+body.light-mode #siker1,
+body.light-mode #siker2 {
+    border-right-color: black;
+}
+
+
+/* Kurzor light mode-ban */
+
+@keyframes blink-caret-light {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+
+}
+
+body.light-mode #siker1.typing,
+body.light-mode #siker2.typing {
+    animation:
+        typing 4s steps(35, end),
+        blink-caret-light 0.75s step-end infinite;
 }
