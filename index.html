@@ -45,14 +45,26 @@
     <!-- SIKEREINK -->
     <section id="sikereink" class="page">
         <h2>Sikereink</h2>
-        <ul class="typing-container_p">
-            <li id="siker1">
+        <ul  class="lista">
+            <li>
                 <strong>Facebook</strong> – A leghíresebb social media platform,
                 első nagyobb sikerünk
             </li>
-            <li id="siker2">
+            <li>
                 <strong>Spotify</strong> – Saját vágyainknak is eleget tudtunk tenni,
                 de másoknak is átadtuk
+            </li>
+            <li>
+                <strong>YouTube</strong> – Megmutattuk, hogy az emberek nemcsak nézni, hanem megosztani is szeretnék a saját videóikat
+            </li>
+            <li>
+                <strong>Netflix</strong> – A szórakozást vittük közelebb az emberekhez, amikor és ahol csak szeretnék
+            </li>
+            <li>
+                <strong>Tiktok</strong> – A rövid videók segítségével új formát adtunk a szórakozásnak és a kreativitásnak
+            </li>
+            <li>
+                <strong>PlayStation</strong> – A játékot nemcsak szórakozásként, hanem közös élményként is közelebb hoztuk az emberekhez
             </li>
         </ul>
     </section>
@@ -60,11 +72,27 @@
     <!-- CÉLJAINK -->
     <section id="celjaink" class="page">
         <h2>Céljaink</h2>
-        <ul>
+        <ul  class="lista">
             <li>
                 <strong>Egy saját AI fejlesztése</strong> –
                 Szeretnénk, ha testreszabott segédünk lenne
                 a fejlesztéseinkben
+            </li>
+            <li>
+                <strong>Nemzetközi terjeszkedés</strong> –
+                Célunk, hogy idővel más országokban is megjelenjünk és új piacokat érjünk el.
+            </li>
+            <li>
+                <strong>Környezettudatos működés</strong> –
+                Hosszú távú célunk, hogy a technológiai fejlődés mellett a környezetünkre is odafigyeljünk.
+            </li>
+            <li>
+                <strong>Saját hardver fejlesztése</strong> –
+                A szoftverek mellett saját technológiai eszközök létrehozásával is szeretnénk bővíteni a cégünket.
+            </li>
+            <li>
+                <strong>Junior program indítása</strong> –
+                Szeretnénk a fiatal fejlesztőknek lehetőséget adni a fejlődésre, és cégünk profiljának frissítésére.
             </li>
             <li>
                 <strong>További fejlesztések</strong> –
@@ -91,28 +119,6 @@
             if (pageId === "sikereink") {
                 startTyping();
             }
-        }
-
-        // =========================
-        // SIKEREINK GÉPELÉSE                          AI CSINÁLTA
-        // =========================
-
-        function startTyping() {
-            const siker1 = document.getElementById("siker1");
-            const siker2 = document.getElementById("siker2");
-            // Először mindkét szöveget elrejtjük
-            siker1.style.display = "none";
-            siker2.style.display = "none";
-            // Első sor megjelenítése
-            setTimeout(function () {
-                siker1.style.display = "inline-block";
-                siker1.classList.add("typing");
-            }, 100);
-            // Második sor megjelenítése 4 másodperc után
-            setTimeout(function () {
-                siker2.style.display = "inline-block";
-                siker2.classList.add("typing");
-            }, 4100);
         }
 
         // =========================

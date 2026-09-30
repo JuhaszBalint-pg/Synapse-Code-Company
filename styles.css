@@ -14,7 +14,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-
 /* =========================
    FEJLÉC
    ========================= */
@@ -49,7 +48,6 @@ body {
     background-color: grey;
 }
 
-
 /* =========================
    OLDALAK
    ========================= */
@@ -64,7 +62,6 @@ body {
     display: block;
     background-color: rgb(100, 100, 100);
 }
-
 
 /* =========================
    FŐOLDAL
@@ -81,7 +78,6 @@ body {
     display: flex;
 }
 
-
 /* =========================
    BEVEZETŐ SZÖVEG
    ========================= */
@@ -93,6 +89,7 @@ body {
 }
 
 .typing-text {
+    font-size:xx-large;
     display: inline-block;
     overflow: hidden;
     border-right: 2px solid black;
@@ -103,19 +100,21 @@ body {
         blink-caret 0.75s step-end infinite;
 }
 
-
 /* =========================
-   SIKEREINK GÉPELÉS
+   LISTA
    ========================= */
-
-#siker1,
-#siker2 {
-    overflow: hidden;
-    white-space: nowrap;
-    letter-spacing: 2px;
-    border-right: 2px solid white;
+.lista{
+    display: block;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-color: white;
+    border-radius: 20px;
+    border: 2px solid;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
 }
-
 
 /* A gépelés animációja */
 
@@ -125,46 +124,34 @@ body {
         blink-caret 0.75s step-end infinite;
 }
 
-
 /* =========================
    GÉPELÉS
    ========================= */
-
 @keyframes typing {
-
     from {
         width: 0;
     }
-
     to {
         width: 100%;
     }
-
 }
-
 
 /* =========================
    KURZOR
    ========================= */
-
 @keyframes blink-caret {
-
     from,
     to {
         border-color: transparent;
     }
-
     50% {
         border-color: white;
     }
-
 }
-
 
 /* =========================
    LOGÓ
    ========================= */
-
 .logo-container {
     margin-top: 40px;
     text-align: center;
@@ -172,16 +159,13 @@ body {
 
 .logo-img {
     display: block;
-    width: 300px;
-    max-width: 80vw;
+    width: 500px;
     margin: 0 auto;
 }
-
 
 /* =========================
    SIKEREINK / CÉLJAINK
    ========================= */
-
 #sikereink,
 #celjaink {
     color: white;
@@ -202,23 +186,19 @@ body {
     line-height: 1.6;
 }
 
-
 /* =========================
    LIGHT MODE
    ========================= */
-
 body.light-mode {
     background-color: white;
     color: black;
 }
-
 
 /* Fejléc */
 
 body.light-mode .fejlec {
     background-color: lightgrey;
 }
-
 
 /* Menü */
 
@@ -230,14 +210,12 @@ body.light-mode .navbar a:hover {
     background-color: lightgrey;
 }
 
-
 /* Oldalak */
 
 body.light-mode .page.active {
     background-color: white;
     color: black;
 }
-
 
 /* Szövegek */
 
@@ -250,33 +228,20 @@ body.light-mode #celjaink {
     color: black;
 }
 
-
 /* Gépelés kurzora */
 
-body.light-mode #siker1,
-body.light-mode #siker2 {
+body.light-mode #siker1{
     border-right-color: black;
 }
-
 
 /* Kurzor light mode-ban */
 
 @keyframes blink-caret-light {
-
     from,
     to {
         border-color: transparent;
     }
-
     50% {
         border-color: black;
     }
-
-}
-
-body.light-mode #siker1.typing,
-body.light-mode #siker2.typing {
-    animation:
-        typing 4s steps(35, end),
-        blink-caret-light 0.75s step-end infinite;
 }
