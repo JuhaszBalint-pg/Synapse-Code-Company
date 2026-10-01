@@ -150,7 +150,7 @@ td{
     pointer-events: auto;
 }
 
-/* Light mode */
+/*
 
 body .light {
     background-color: white;
@@ -169,46 +169,106 @@ body .light {
     color: black;
 }
 
-#lent {
+#lent .light{
     background-color: white;
     color: black;
     border: 2px solid red;
     background-image: url("kepek/sun.png"); 
 }
 
-#lent a {
+#lent a .light{
     color: black;
 }
 
-#fent {
+#fent .light{
 
     background-color: white;
     border: 2px solid red;
     color: black;
 }   
 
-.menu {
+.menu .light{
     color: red;
 }
 
-.menu a {
+.menu a .light{
     color: red;
 }
 
-.manu a {
+.manu a .light{
     color: black;
 }
 
-.lablec a{
+.lablec a .light{
     color: black;
 }
 
-table {
+table .light{
     border: 2px solid red;
     color: black;
     background-image: url("kepek/sun.png");
 }
 
-td{
+td .light{
+    border-top: 1px solid red;
+}
+
+*/
+
+
+
+/* Light mode */
+
+body.light-mode {
+    background-color: white;
+}
+
+body.light-mode .fejlec {
+    background-color: white;
+    border-bottom: 2px solid red;
+    color: black;
+}
+
+body.light-mode .lablec {
+    background-color: white;
+    border-top: 2px solid red;
+    background-image: url("kepek/sun.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: black;
+}
+
+body.light-mode #lent,
+body.light-mode #fent {
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    background-image: url("kepek/sun.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body.light-mode #lent a,
+body.light-mode .lablec a {
+    color: black;
+}
+
+body.light-mode .menu {
+    color: red;
+}
+
+body.light-mode .menu a {
+    color: red;
+}
+
+body.light-mode table {
+    border: 2px solid red;
+    color: black;
+    background-image: url("kepek/sun.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body.light-mode td {
     border-top: 1px solid red;
 }
