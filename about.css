@@ -152,74 +152,63 @@ td{
 
 /* Light mode */
 
-body {
-    background-color: black;
+body .light {
+    background-color: white;
 }
 
-.fejlec {
-    background-color: black;
-    border-bottom: 2px solid yellow; 
-    color: yellow;
+.fejlec .light {
+    background-color: white;
+    border-bottom: red; 
+    color: black;
 }
 
-#logo{
-    width: 200px;
-    height: 200px;
-}
-
-.lablec{ 
-    background-color: black;
-    border-top: 2px solid yellow;
-    background-image: url("kepek/moon.png");
-    color: yellow;
+.lablec .light { 
+    background-color: white;
+    border-top: 2px solid red;
+    background-image: url("kepek/sun.png");
+    color: black;
 }
 
 #lent {
-    background-color: black;
-    color: yellow;
-    border: 2px solid yellow;
-    margin-bottom: 5%;
-    background-image: url("kepek/moon.png"); 
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    background-image: url("kepek/sun.png"); 
 }
 
 #lent a {
-    color: yellow;
+    color: black;
 }
 
 #fent {
 
-    background-color: black;
-    border: 2px solid yellow;
-    color: yellow;
+    background-color: white;
+    border: 2px solid red;
+    color: black;
 }   
 
 .menu {
-    color: yellow;
+    color: red;
 }
 
 .menu a {
-    color: yellow;
+    color: red;
 }
 
 .manu a {
-    color: yellow;
+    color: black;
 }
 
 .lablec a{
-    color: yellow;
+    color: black;
 }
 
 table {
-    border: 2px solid yellow;
-    color: yellow;
-    background-image: url("kepek/moon.png");
+    border: 2px solid red;
+    color: black;
+    background-image: url("kepek/sun.png");
 }
 
 td{
-    border-top: 1px solid yellow;;
-}
-
-#githublogo {
-    height: 100px;
-    width: 150px;
+    border-top: 1px solid red;
 }
