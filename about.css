@@ -149,3 +149,77 @@ td{
     z-index: 1;
     pointer-events: auto;
 }
+
+/* Light mode */
+
+body {
+    background-color: black;
+}
+
+.fejlec {
+    background-color: black;
+    border-bottom: 2px solid yellow; 
+    color: yellow;
+}
+
+#logo{
+    width: 200px;
+    height: 200px;
+}
+
+.lablec{ 
+    background-color: black;
+    border-top: 2px solid yellow;
+    background-image: url("kepek/moon.png");
+    color: yellow;
+}
+
+#lent {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    margin-bottom: 5%;
+    background-image: url("kepek/moon.png"); 
+}
+
+#lent a {
+    color: yellow;
+}
+
+#fent {
+
+    background-color: black;
+    border: 2px solid yellow;
+    color: yellow;
+}   
+
+.menu {
+    color: yellow;
+}
+
+.menu a {
+    color: yellow;
+}
+
+.manu a {
+    color: yellow;
+}
+
+.lablec a{
+    color: yellow;
+}
+
+table {
+    border: 2px solid yellow;
+    color: yellow;
+    background-image: url("kepek/moon.png");
+}
+
+td{
+    border-top: 1px solid yellow;;
+}
+
+#githublogo {
+    height: 100px;
+    width: 150px;
+}
