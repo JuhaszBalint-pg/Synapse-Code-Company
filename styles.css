@@ -82,13 +82,13 @@ body {
    BEVEZETŐ SZÖVEG
    ========================= */
 
-.typing-container_p {
+.typing-container_p {            /*AI*/
     margin-top: 20px;
     text-align: center;
     color: white;
 }
 
-.typing-text {
+.typing-text {            /*AI*/
     font-size:xx-large;
     display: inline-block;
     overflow: hidden;
@@ -116,7 +116,7 @@ body {
     padding-right: 15px;
 }
 
-/* A gépelés animációja */
+/* A gépelés animációja */            /*AI*/
 
 .typing {
     animation:
@@ -125,7 +125,7 @@ body {
 }
 
 /* =========================
-   GÉPELÉS
+   GÉPELÉS            /*AI*/
    ========================= */
 @keyframes typing {
     from {
@@ -187,7 +187,7 @@ body {
 }
 
 /* =========================
-   LIGHT MODE
+   LIGHT MODE            /*AI*/
    ========================= */
 body.light-mode {
     background-color: white;

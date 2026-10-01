@@ -1,7 +1,15 @@
-setTimeout(function() {
-    siker1.style.display = "inline-block";
-}, 100);
+// Mentett téma betöltése
+const savedTheme = localStorage.getItem('theme');
 
-setTimeout(function() {
-    siker2.style.display = "inline-block";
-}, 4100);
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark-mode');
+}
+
+// Nézet váltása és mentése
+function toggleMode() {
+  document.body.classList.toggle('dark-mode');
+
+  const isDarkMode = document.body.classList.contains('dark-mode');
+
+  localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+}
